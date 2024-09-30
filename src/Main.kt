@@ -1,5 +1,13 @@
 fun main() {
-
+    val arr = fill4x4ArrayByNumbersFrom1To16(arrayOf(
+        arrayOf(0, 0, 0, 0),
+        arrayOf(0, 0, 0, 0),
+        arrayOf(0, 0, 0, 0),
+        arrayOf(0, 0, 0, 0),))
+    arr.forEach {
+        it.forEach { print(it) }
+        println()
+    }
 }
 
 //Функция для задачи 2
@@ -20,8 +28,8 @@ fun fill4x4ArrayByNumbersFrom1To16(array: Array<Array<Int>>): Array<Array<Int>> 
     if (array.size != 4) return array
     array.forEach { if (it.size != 4) return array }
     var count = 0
-    for (i in 1..4) {
-        for (j in 1..4) array[i][j] = j + count
+    for (i in 0..3) {
+        for (j in 0..3) array[i][j] = j + count + 1
         count += 4
     }
     return array
