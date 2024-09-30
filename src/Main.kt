@@ -15,6 +15,7 @@ fun getEvenNumbers(array: Array<Array<Int>>): Array<Int> {
 }
 
 //Функция для задачи 3
+//Возвращает изначальный массив если матрица не соответствует размеру 4x4
 fun fill4x4ArrayByNumbersFrom1To16(array: Array<Array<Int>>): Array<Array<Int>> {
     if (array.size != 4) return array
     array.forEach { if (it.size != 4) return array }
