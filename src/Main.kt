@@ -1,13 +1,5 @@
 fun main() {
-    val arr = fill4x4ArrayByNumbersFrom1To16(arrayOf(
-        arrayOf(0, 0, 0, 0),
-        arrayOf(0, 0, 0, 0),
-        arrayOf(0, 0, 0, 0),
-        arrayOf(0, 0, 0, 0),))
-    arr.forEach {
-        it.forEach { print(it) }
-        println()
-    }
+
 }
 
 //Функция для задачи 2
